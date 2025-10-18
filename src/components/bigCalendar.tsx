@@ -49,7 +49,7 @@ const BigCalendar = () => {
         events={calendarEvents}
         startAccessor="start"
         endAccessor="end"
-        views={isMobile ? ["day", "work_week"] : [ "work_week", "day"]}
+        views={isMobile ? ["day", "work_week"] : ["month", "work_week", "day"]}// Make changes here, make sure mobile users are only able to view day view not month view
         view={view}
         style={{ height: "100%" }}
         onView={handleOnChangeView}

@@ -17,7 +17,17 @@ const forms: {
   [key: string]: (type: "create" | "update", data?: any) => JSX.Element;
 } = {
   teacher: (type, data) => <TeacherForm type={type} data={data} />,
-  student: (type, data) => <StudentForm type={type} data={data} />
+  student: (type, data) => <StudentForm type={type} data={data} />,
+  parent: (type, data) => <div>Parent form not implemented yet</div>,
+  subject: (type, data) => <div>Subject form not implemented yet</div>,
+  class: (type, data) => <div>Class form not implemented yet</div>,
+  lesson: (type, data) => <div>Lesson form not implemented yet</div>,
+  exam: (type, data) => <div>Exam form not implemented yet</div>,
+  assignment: (type, data) => <div>Assignment form not implemented yet</div>,
+  result: (type, data) => <div>Result form not implemented yet</div>,
+  attendance: (type, data) => <div>Attendance form not implemented yet</div>,
+  event: (type, data) => <div>Event form not implemented yet</div>,
+  announcement: (type, data) => <div>Announcement form not implemented yet</div>
 };
 
 const FormModal = ({
@@ -64,7 +74,7 @@ const FormModal = ({
         </button>
       </form>
     ) : type === "create" || type === "update" ? (
-      forms[table](type, data)
+      forms[table] ? forms[table](type, data) : <div className="p-4 text-center">Form for {table} is not implemented yet</div>
     ) : (
       "Form not found!"
     );

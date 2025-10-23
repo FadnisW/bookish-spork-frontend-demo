@@ -139,7 +139,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-Project Link: [https://github.com/your-username/bookish-spork-Frontend](https://github.com/FadnisW/bookish-spork-Frontend)
+Project Link: [https://github.com/FadnisW/bookish-spork-Frontend](https://github.com/FadnisW/bookish-spork-Frontend)
 
 ---
 
